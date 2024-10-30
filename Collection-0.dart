@@ -1,4 +1,4 @@
-// Day 0 of learning dart
+// Lesson 0 of dart
 
 /* Content learnt 
  * Introduction - print hello world
