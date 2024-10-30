@@ -1,4 +1,5 @@
-// Day 1 of learning dart
+// Lesson 1 of dart 
+
 /* Content learnt
  * Lists -> More like arrays but they can store variables of different types
  * Maps -> More like dictonaries in python
