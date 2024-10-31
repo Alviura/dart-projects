@@ -3,8 +3,9 @@
 /* Content learnt
  * Logic (Condition statements)
  * Functions
- * 
- * 
+ *  Basic fuction
+ *  Void function
+ *  optional positional function[] & named positional function{}
 */
 void main(){
   // Logic - if
@@ -69,4 +70,5 @@ void main(){
   }
   coolFunc("Nairobi"); // Prints Nairobi and default value = Kenya
   coolFunc("Nairobi", country:"Uganda"); // Prints Uganda instead of Kenya, 
+
 }
