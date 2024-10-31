@@ -6,11 +6,11 @@
 void main (){
   for(var num = 1; num <=100; num++){
     if(num % 5 == 0 && num % 3 == 0){
-      print("fizzbuzz");
+      print("$num: fizzbuzz");
     } else if(num % 5 == 0){
-      print("buzz");
+      print("$num: buzz");
     } else if(num % 3 == 0){
-      print("fizz");
+      print("$num: fizz");
     } else{
       print(num);
     }
