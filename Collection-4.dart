@@ -3,12 +3,12 @@
 /* Content learnt
  * OOP concepts:
  *  Classes and Objects
- *  Encapsulation
- *  Inheritance
- *  Polymorphism
- *  Abstraction
- * 
-*/
+ *  Constructurors
+ *    Default constructor
+ *    parameterized constructor with named parameters
+ *    Named constructor
+ *    Constant constructor
+ */
 
 // Class -> A blueprint that allows you to create an object
 // Object -> An realworld entity expressed / mapped out into a program, an instance of a class
@@ -20,13 +20,28 @@ void main(){
   print(p1);
   p1.showData();
   print(p1.name);
+
   Human h1 = Human(name: "Alvin", planet: "Earth", age: 20, height: 1.72); // instantiates the object h1 with Alvin as the value for name and Earth as the default value for planet
   print(h1.planet);
   h1.displayInfo(); 
+
   CartessianPlane plane1 = CartessianPlane(1, 2);
   plane1.displayInfo();
   CartessianPlane plane2 = CartessianPlane.origin();
   plane2.displayInfo();
+  
+  Car c1 = Car(name:"Subaru");
+  c1.display(); // Prints subaru
+  c1 = Car.twoEntities(name: "Toyota", color: "Blue"); // Ive modified the value of c1 using another constructor
+  c1.display(); // Prints toyota and blue
+
+  // Constant constructor
+  Point q1 = const Point(x: 10, y: 9);
+  Point q2 = const Point(x: 12, y: 11);
+  q1.printInfo();
+  q2.printInfo();
+
+
   
 }
 class Person{
@@ -78,5 +93,37 @@ class Person{
 
     void displayInfo(){
       print("the points are $x, $y");
+    }
+  }
+  class Car{
+    String? name, color;
+    double? prize;
+
+    Car({this.name, this.color, this.prize}); // Default Constructor 
+    Car.twoEntities({this.name, this.color}); // Named Constructor 
+    
+    void display(){
+      print("Name: $name");
+      print("Color: $color");
+      print("Prize: $prize");
+    }
+  }
+
+  // Constant constructor -> You cant change the value of the objrct after initializing the value
+  /* Rules when declaring a constant constructor
+   * All properties of the class must be final
+   * It does not have a body
+   * Only class containing const constructor is initialized using const keyword
+  */
+
+  class Point {
+    final int x;
+    final int y;
+
+    const Point({required this.x, required this.y}); // keyword required specifies that the values x and y must be input when creating the object
+
+    void printInfo(){
+      print(x);
+      print(y);
     }
   }
