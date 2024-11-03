@@ -33,7 +33,8 @@ void main (){
   t1.rollNo = 190;
   t1.displayInfo();
 
-  Cat c1 = Cat();
+  Cat c1 = Cat("Cat", 23.4, "Ginger", 1); // Created object c1, Cat is a sub-class of Animal
+  c1.printOut();
 }
 
 // Inheritance -> Sharing of behaviour between two classes. It allows you to define a class that extends the functionality of another class
@@ -73,23 +74,37 @@ class Teacher extends Person{
   int? rollNo;
 
   void displayInfo(){
-    super.displayInfo();
+    print("Name: ${super.name}"); // super is used to call the property of the super class
+    print("Age : ${super.age}");
     print("rollNo: ${rollNo}");
   }
 }
 
 // Inheritance of constructor
 /* The constructor of the parent class is called first and then, the constructor of child class
+ * The child class looks for the default constructor in the parent class before it instantioation
+ * If it lacks the default constructor, it returns an error
+ * We use the :super() to specify the cconstructor of the super class it should pick
 */
 class Animal{
-  Animal(){
+  String? name;
+  double? weight;
+
+  Animal(this.name, this.weight){
       print("This is the constructor of a parent class");
     }
   }
 
 class Cat extends Animal{
-  Cat(){
+  String? breed;
+  int? age;
+
+  Cat(String name, double weight, this.breed, this.age): super(name, weight){
       print("this is the constructor of child class");
+    }
+
+    void printOut(){
+      print("The $breed $name is $age years old and weighs $weight kgs");
     }
   }
 
