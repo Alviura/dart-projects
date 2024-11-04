@@ -100,3 +100,8 @@ void main(){
   goldy.eat();
   goldy.swim();
 }
+
+// Different ways of writing mixin
+/* mixin MixinName on ClassName
+ * class ClassName with MixinName
+*/
