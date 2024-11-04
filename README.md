@@ -3,7 +3,7 @@ Welcome to my **Dart Tutorials Repository!** This repo contains example files do
 
 ## Repository Contents
 Below is a list of files and topics they cover
-|     File        |      Topic   |
+|     Filename.dart       |      Topic   |
 |------------------|------------|
 |Collection-0.dart  |**Introduction to Dart**: Basics of Dart, including an introduction to variables and data types|
 |Collection-1.dart| **Lists, Maps, Loops**: Understanding lists, maps and loops, with different code snippets|
