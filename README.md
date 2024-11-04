@@ -9,7 +9,7 @@ Below is a list of files and topics they cover
 |    Collection-1.dart         | **Lists, Maps, Loops**: Understanding lists, maps and loops, with different code snippets|
 |    Collection-2.dart         | **Logic Statements and Functions**: Working with logic statements and vaious functions, invloving basic, void, optional positional, and named positional functions|
 |    Collection-3.dart         | **User Input and Data Conversion**: Handling user input using *stdin.readLineSync()* and converting betweenstrings, integers and doubles|
-|    Collection-4.dart         | ** Classes and Objects**: Exploring object-oriented principles with classes, objects and constructors (default, parameterized, named  and constant)|
+|    Collection-4.dart         | **Classes and Objects**: Exploring object-oriented principles with classes, objects and constructors (default, parameterized, named  and constant)|
 |    Collection-5.dart         | **Encapsulation**: Demonstrating encapsulation and how it works in Dart|
 |    Collection-6.dart         | **Inheritance**: Learning inheritance and its application in dart|
 |    Collection-7.dart         | **Getter and Setter**: Implementing getter and setter methods for encapsulating access to class properties|
