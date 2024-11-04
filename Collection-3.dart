@@ -11,12 +11,12 @@ import 'dart:io'; // The libray used to read user input
 
 void main(){
   // // prompt user for input
-  // print("Enter your name");
+  print("Enter your name");
 
-  // // allow the user to enter their name
-  // var name = stdin.readLineSync(); // only used for Strings
+  // allow the user to enter their name
+  var name = stdin.readLineSync(); // only used for Strings
 
-  // print("Hello, $name");
+  print("Hello, $name");
 
   // Convert String to Int
   var a, b, c;
